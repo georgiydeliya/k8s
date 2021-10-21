@@ -26,3 +26,6 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "auto-merge-pom,!do not merge"
+          MERGE_REMOVE_LABELS: "auto-merge-pom"
+          MERGE_METHOD: "squash"
+          MERGE_COMMIT_MESSAGE: "automatically merged with auto-merge-pom label, auto update for the pom file"
